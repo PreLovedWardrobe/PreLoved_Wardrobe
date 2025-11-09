@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PreLoved Wardrobe — C2C Marketplace</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Brand logo" class="logo">
+        <div class="brand-text">
+          <h1>PreLoved Wardrobe</h1>
+          <p class="tag">Style That’s Sustainable</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#how">How it works</a>
+        <a href="#browse">Browse</a>
+        <a href="#sell">Sell</a>
+        <a href="#contact">Contact</a>
+        <button class="btn primary">Get Started</button>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+<div class="nav-extras">
+  <form class="search-form">
+    <input type="text" placeholder="Search for fashion..." class="search-input"/>
+  </form>
+  <button class="btn login-btn">Sign In</button>
+  <button class="btn signup-btn">Register</button>
+</div>
+
+    </div>
+  </header>
+
+  <main>
+    
+<section class="hero hero-centered">
+  <div class="container hero-center-content">
+    <img src="assets/logo.png" alt="PreLoved Wardrobe Logo" class="hero-logo">
+    <h2 class="hero-brand-title">PreLoved Wardrobe</h2>
+    <p class="hero-tagline">Style That’s Sustainable</p>
+    <div class="cta-row">
+      <a class="btn primary" href="#sell">Start Selling</a>
+      <a class="btn ghost" href="#browse">Browse Items</a>
+    </div>
+  </div>
+</section>
+
+
+    <section id="how" class="container how">
+      <h2>How it works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="icon">1</div>
+          <h4>Create a listing</h4>
+          <p>Upload photos, write a quick description and set a price.</p>
+        </div>
+        <div class="step">
+          <div class="icon">2</div>
+          <h4>Connect with buyers</h4>
+          <p>Chat, negotiate and choose pickup or delivery.</p>
+        </div>
+        <div class="step">
+          <div class="icon">3</div>
+          <h4>Complete payment</h4>
+          <p>Secure payment flow and rating system keeps the community safe.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="browse" class="container browse">
+      <h2>Featured listings</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="assets/sample1.jpg" alt="item">
+          <div class="card-body">
+            <h3>Handmade Leather Bag</h3>
+            <p class="price">₹2,499</p>
+            <a class="btn small" href="#">View</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="assets/sample2.jpg" alt="item">
+          <div class="card-body">
+            <h3>Vintage Lamp</h3>
+            <p class="price">₹1,200</p>
+            <a class="btn small" href="#">View</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="assets/sample3.jpg" alt="item">
+          <div class="card-body">
+            <h3>Designer T-shirt</h3>
+            <p class="price">₹799</p>
+            <a class="btn small" href="#">View</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="sell" class="container sell">
+      <h2>Start selling in minutes</h2>
+      <div class="sell-grid">
+        <form id="sell-form" class="sell-form">
+          <label>Title<input type="text" name="title" required></label>
+          <label>Price (₹)<input type="number" name="price" required></label>
+          <label>Category
+            <select name="cat">
+              <option>Clothing</option>
+              <option>Home</option>
+              <option>Electronics</option>
+              <option>Handmade</option>
+            </select>
+          </label>
+          <label>Photos<input type="file" name="photos" accept="image/*" multiple></label>
+          <label>Description<textarea name="desc"></textarea></label>
+          <button class="btn primary" type="submit">Create Listing</button>
+        </form>
+        <div class="seller-benefits">
+          <h3>Why sell with us?</h3>
+          <ul>
+            <li>Low seller fees</li>
+            <li>Buyer protection</li>
+            <li>Local community reach</li>
+            <li>Easy withdrawals</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact & Support</h2>
+      <p>Questions? Reach out to support@prelovedwardrobe.com or use the form below.</p>
+      <form class="contact-form">
+        <label>Name<input type="text" name="name"></label>
+        <label>Email<input type="email" name="email"></label>
+        <label>Message<textarea name="message"></textarea></label>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> PreLoved Wardrobe — C2C Marketplace</p>
+      <div class="social">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

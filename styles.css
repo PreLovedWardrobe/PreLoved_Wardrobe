@@ -1,0 +1,122 @@
+:root{
+  --maxw:1100px;
+  --accent:#556B2F;
+  --muted:#666;
+  --radius:12px;
+}
+
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; color:#111; line-height:1.45}
+.container{max-width:var(--maxw); margin:0 auto; padding:28px;}
+
+.site-header{background:linear-gradient(90deg,#ffffffcc, #f8fbff); position:sticky; top:0; z-index:20; backdrop-filter: blur(4px); border-bottom:1px solid #eee;}
+.header-inner{display:flex; align-items:center; justify-content:space-between; gap:16px;}
+.brand{display:flex; align-items:center; gap:12px;}
+.logo{width:56px; height:56px; object-fit:contain; border-radius:8px; background:#fff; padding:6px;}
+.brand-text h1{margin:0; font-size:18px;}
+.nav{display:flex; gap:12px; align-items:center;}
+.nav a{color:var(--muted); text-decoration:none;}
+.btn{padding:10px 14px; border-radius:8px; border:none; cursor:pointer; text-decoration:none; display:inline-block; font-weight:600;}
+.btn.primary{background:var(--accent); color:white;}
+.btn.ghost{background:transparent; border:1px solid #ddd;}
+.btn.small{padding:6px 10px; font-size:14px;}
+.nav-toggle{display:none; background:none; border:none; font-size:22px;}
+
+.hero{padding:40px 0;}
+.hero-grid{display:grid; grid-template-columns:1fr 420px; gap:28px; align-items:center;}
+.hero h2{font-size:34px; margin:0 0 12px;}
+.cta-row{display:flex; gap:10px; margin-top:16px;}
+.trust{display:flex; gap:12px; margin-top:20px; list-style:none; padding:0; color:var(--muted)}
+
+.hero-card{background:#fff; border-radius:14px; box-shadow:0 8px 30px rgba(20,30,80,0.06); padding:16px;}
+.listing-sample{display:flex; gap:12px; align-items:center; margin-bottom:12px;}
+.listing-sample img{width:96px; height:72px; object-fit:cover; border-radius:10px;}
+.listing-sample.small img{width:64px; height:48px;}
+
+.how{padding:30px 0;}
+.steps{display:flex; gap:16px; margin-top:14px;}
+.step{background:#fafafa; border-radius:10px; padding:18px; flex:1; text-align:center;}
+.step .icon{width:44px; height:44px; border-radius:50%; background:#fff; display:inline-grid; place-items:center; margin:0 auto 8px; box-shadow:0 6px 18px rgba(10,20,60,0.04); font-weight:700;}
+
+.browse{padding:30px 0}
+.grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
+.card{background:#fff; border-radius:12px; overflow:hidden; box-shadow:0 8px 20px rgba(10,20,60,0.04);}
+.card img{width:100%; height:150px; object-fit:cover;}
+.card-body{padding:12px;}
+.price{color:var(--accent); font-weight:700; margin:8px 0;}
+
+.sell{padding:30px 0;}
+.sell-grid{display:grid; grid-template-columns:1fr 320px; gap:20px;}
+.sell-form label, .contact-form label{display:block; margin-bottom:10px; font-size:14px;}
+.sell-form input, .sell-form textarea, .contact-form input, .contact-form textarea, .sell-form select{width:100%; padding:10px; border-radius:8px; border:1px solid #e6e6e6; margin-top:6px;}
+.seller-benefits{background:#fff; padding:16px; border-radius:12px; box-shadow:0 8px 20px rgba(10,20,60,0.04);}
+
+.site-footer{background:#0b1220; color:#cfe0ff; padding:18px 0; margin-top:24px;}
+.footer-inner{display:flex; justify-content:space-between; align-items:center; gap:12px;}
+.social a{color:#dbeeff; margin-left:10px; text-decoration:none;}
+
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr; padding-bottom:12px;}
+  .grid{grid-template-columns:repeat(2,1fr);}
+  .sell-grid{grid-template-columns:1fr;}
+  .nav{display:none;}
+  .nav-toggle{display:block;}
+}
+@media(max-width:540px){
+  .grid{grid-template-columns:1fr;}
+  .hero h2{font-size:24px;}
+  .logo{width:46px; height:46px;}
+}
+
+.hero-centered {
+  padding: 80px 0;
+  text-align: center;
+}
+.hero-center-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.hero-logo {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+.hero-brand-title {
+  font-size: 38px;
+  margin: 10px 0;
+  color: #556B2F;
+  font-weight: 700;
+}
+.hero-tagline {
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+.nav-extras{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.search-input{
+  padding:10px 14px;
+  border-radius:10px;
+  border:1px solid #ccc;
+  width:200px;
+  font-size:14px;
+}
+
+.login-btn, .signup-btn{
+  background:#fff;
+  color:#556B2F;
+  border:1px solid #556B2F;
+  font-weight:600;
+}
+
+@media(max-width:900px){
+  .nav-extras{
+    display:none;
+  }
+}
